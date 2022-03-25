@@ -1,0 +1,22 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import "./lib/css/button.module.css";
+
+@layer {
+  .size-full {
+    @apply w-full h-full;
+  }
+  .md-center {
+    @apply absolute left-1/2 md:left-0 -translate-x-1/2 md:translate-x-0;
+  }
+  .text-flex {
+    @apply w-full text-center;
+  }
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+  .flex-multiple {
+    @apply flex flex-wrap justify-center content-center;
+  }
+}
